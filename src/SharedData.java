@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * The SharedData class stores the shared variables used by the threads.
+ * It manages an {@code ArrayList<Integer>}, a boolean array for winning indices,
+ * and a flag indicating if a solution was found.
+ */
 public class SharedData {
     private ArrayList<Integer> array;
     private boolean[] winArray;
