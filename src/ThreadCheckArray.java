@@ -18,7 +18,7 @@ public class ThreadCheckArray implements Runnable {
     public ThreadCheckArray(SharedData sd) {
         this.sd = sd;
         synchronized (sd) {
-            array = new ArrayList<>(sd.getArrayList());
+            array = new ArrayList<>(sd.getArray());
             b = sd.getB();
         }
         winArray = new boolean[array.size()];
